@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "listdiff2"
+version = "0.1.1"
+description = "A pure Python library for fast comparison of large structured data, using set operations instead of loops to calculate differences between lists of dictionaries, supporting deep comparison of dictionary objects"
+readme = "README.md"
+authors = [
+    {name = "Rocks Wang", email = "rockswang@foxmail.com"}
+]
+license = {text = "MIT"}
+keywords = ["diff", "difference", "list", "dictionary", "comparison", "data-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+dependencies = []
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/rockswang/list_diff"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["listdiff2*"]
